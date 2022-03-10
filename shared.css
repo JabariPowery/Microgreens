@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+
+
+.main-header {
+    width: 100%;
+    background: rgb(45, 133, 79);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    z-index: 2;
+}
+
+.toggle-button {
+    width: 3rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding-top: 0;
+    padding-bottom: 0;
+    vertical-align: middle;
+}
+
+.toggle-button__bar {
+    width: 100%;
+    height: 0.2rem;
+    background: rgb(64, 233, 115);
+    display: block;
+    margin: 0.6rem 0;
+}
+.main-nav {
+    display:none;
+}
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.main-nav__item {
+    margin: 0 1rem;
+}
+
+.main-nav__item a,
+.mobile-nav__item a {
+    text-decoration: none;
+    color: rgb(64, 233, 115);
+    font-weight: bold;
+    padding: 0.2rem 0;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active,
+.mobile-nav__item a:hover,
+.mobile-nav__item a:active {
+    color: white;
+    border-bottom: 5px solid white;
+}
+@media (min-width: 40rem) {
+    .main-nav {
+        display: flex;
+    }
+    
+    .toggle-button {
+        display:none;
+    }
+}
+
+.main-nav__item--cta a,
+.mobile-nav__item--cta a {
+    color: rgb(152, 252, 39);
+    padding: 0.5rem 0.2rem;
+    background: rgb(255, 255, 255);
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active,
+.mobile-nav__item--cta a:hover,
+.mobile-nav__item--cta a:active {
+    color: white;
+    background: rgb(153, 252, 39);
+    padding: 0.5rem 0.2rem;
+    border-bottom: none;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.459);
+}
+
+.mobile-nav {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: rgb(129, 129, 129);
+    width: 40%;
+    height: 60vh;
+    transform: translateY(-100%);
+    transition: transform 300ms ease-out;
+    border-radius: 8px;
+    min-width: 21%;
+}
+
+.mobile-nav__items {
+    width: 90%;
+    height: 100%;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-nav__item {
+    margin: 1rem 0;
+}
+
+.mobile-nav__item a {
+    font-size: 1.5rem;
+  }
+
+.open {
+    display: block !important;
+    transform: translateX(0) !important;
+}
