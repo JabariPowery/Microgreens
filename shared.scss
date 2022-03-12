@@ -150,7 +150,28 @@ body {
     transform: translateX(0) !important;
 }
 
+.main-footer {
+    background:rgba(0, 0, 0, 0.651);
+    color: rgb(255, 255, 255);
+    padding: 1.5rem;
+    margin-top: 3.5rem;
+}
 
+.main-footer__items {
+    text-align: center;
+}
+
+.main-footer__item {
+    display: block;
+    margin: 1rem 0;
+}
+
+@media (min-width: 40rem) {
+    .main-footer__item {
+        display: inline-block;
+        margin: 0 1rem;
+    }
+}
 
 
 
