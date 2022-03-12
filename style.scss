@@ -1,0 +1,73 @@
+.home-logo {
+    margin-top: 56px;
+    overflow: hidden;
+    img {
+        height: 38vh;
+        width: 100vw;
+        background-color:rgb(169, 255, 212);
+        background-size:contain;
+        background-position: 50% 30%;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 40rem) and (min-height: 40rem) {
+    .home-logo img {
+        height: 50vh;
+    }
+}
+
+#display-title {
+    font-size: 1.9rem;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+@media (min-width: 40rem) {
+    #display-title{
+        font-size: 3rem;
+    }
+}
+
+.display {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.img-container {
+    width: 100%;
+    max-width: 40rem;
+}
+
+.image {
+    width: 100%;
+    vertical-align: top;
+}
+
+.display-info {
+    margin: 0 1rem;
+}
+
+.display-info p {
+    font-weight:lighter;
+}
+
+@media (min-width: 40rem) {
+
+    .display {
+        margin: 3rem auto;
+        max-width: 1500px;
+    }
+    .img-container {
+        display: inline-block;
+        width: 66%;
+        vertical-align: middle;
+    }
+    .display-info {
+        display: inline-block;
+        width: 30%;
+        vertical-align: middle;
+    }
+}
