@@ -1,0 +1,106 @@
+main {
+  margin-top: 6rem;
+}
+
+.order-title {
+  color: #1c6e1c;
+  font-weight: bold;
+  text-align: center;
+}
+
+.order-container {
+  text-align: center;
+}
+.order-container .order-tile {
+  padding: 1rem;
+  height: 100%;
+  width: 70%;
+  border: 1.8px solid #1c6e1c;
+  border-radius: 8px;
+  display: block;
+  text-align: center;
+  margin: 1rem auto;
+}
+.order-container .order-tile img {
+  width: 100%;
+  height: 100%;
+}
+.order-container .order-tile .order-tile__incrementor-wrapper {
+  height: 3rem;
+}
+.order-container .order-tile .order-tile__incrementor-wrapper button {
+  width: 30%;
+  height: 100%;
+  vertical-align: middle;
+  margin: 0 0.2rem;
+}
+.order-container .order-tile .order-tile__incrementor-wrapper [type=number] {
+  height: 100%;
+  width: 30%;
+  border-radius: 8px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+.order-container #order-tile__arugula {
+  padding: 5.8rem 1rem 1rem 1rem;
+}
+
+@media (min-width: 40rem) {
+  .order-container .order-tile {
+    display: inline-block;
+    width: 30%;
+  }
+}
+.submit-button__container {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.submit-button,
+.order-tile__incrementor-wrapper button {
+  padding: 1rem 0.8rem;
+  background: #2dc52d;
+  color: white;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: none;
+}
+
+.submit-button:hover,
+.order-tile__incrementor-wrapper button:hover {
+  background: white;
+  color: #2dc52d;
+  padding: 1rem 0.8rem;
+  border-bottom: none;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.459);
+}
+
+.total-display__container {
+  display: flex;
+  justify-content: center;
+}
+.total-display__container .total-display {
+  padding: 1rem;
+  height: 100%;
+  width: 60%;
+  border: 1.8px solid #1c6e1c;
+  border-radius: 8px;
+  text-align: left;
+}
+.total-display__container .total-display .total {
+  margin: 0.5rem 0;
+}
+.total-display__container .total-display .grand-total {
+  margin-top: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .total-display__container .total-display {
+    width: 30%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

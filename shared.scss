@@ -42,15 +42,32 @@ body {
     padding-top: 0;
     padding-bottom: 0;
     vertical-align: middle;
+    transition: transform 300ms ease-out;
+    transform-origin: 1rem;
 }
 
 .toggle-button__bar {
-    width: 100%;
+    width: 60%;
     height: 0.2rem;
     background: $header-item__color;
     display: block;
     margin: 0.6rem 0;
 }
+
+.toggle-button__bar-one {
+    transform: rotateZ(45deg);
+}
+
+.toggle-button__bar-two {
+    transform: rotateZ(-45deg);
+}
+
+.open-button {
+    transform: rotateZ(90deg);
+    transform-origin: 1rem;
+    transition: transform 300ms ease-out;
+}
+
 .main-nav {
     display:none;
 }

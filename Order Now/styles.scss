@@ -1,0 +1,104 @@
+main {
+    margin-top: 6rem;
+}
+
+.order-title {
+    color:rgb(28, 110, 28);
+    font-weight: bold;
+    text-align: center;
+}
+.order-container {
+    text-align: center;
+    .order-tile {
+        padding: 1rem;
+        height: 100%;
+        width: 70%;
+        border: 1.8px solid rgb(28, 110, 28);
+        border-radius: 8px;
+        display: block;
+        text-align: center;
+        margin: 1rem auto;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        .order-tile__incrementor-wrapper {
+            height: 3rem;
+            button {
+                width: 30%;
+                height: 100%;
+                vertical-align: middle;
+                margin: 0 0.2rem;
+            }
+            [type="number"] {
+                height: 100%;
+                width: 30%;
+                border-radius: 8px;
+                text-align: center;
+                font-family: 'Montserrat', sans-serif;
+            }
+        }
+    }
+    #order-tile__arugula {
+        padding: 5.8rem 1rem 1rem 1rem;
+    }   
+}
+
+@media (min-width: 40rem) {
+    .order-container .order-tile {
+        display:inline-block;
+        width: 30%;
+    }
+}
+
+.submit-button__container {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.submit-button,
+.order-tile__incrementor-wrapper button {
+    padding: 1rem 0.8rem;
+    background: rgb(45, 197, 45);
+    color: white;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border:none;
+}
+
+.submit-button:hover,
+.order-tile__incrementor-wrapper button:hover {
+    background: rgb(255, 255, 255);
+    color:rgb(45, 197, 45);
+    padding: 1rem 0.8rem;
+    border-bottom: none;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.459);
+}
+
+.total-display__container {
+    display: flex;
+    justify-content: center;
+    .total-display {
+        padding: 1rem;
+        height: 100%;
+        width: 60%;
+        border: 1.8px solid rgb(28, 110, 28);
+        border-radius: 8px;
+        text-align: left;
+        .total {
+            margin: 0.5rem 0;
+        }
+        .grand-total {
+            margin-top: 1rem;
+        }
+    }
+}
+
+@media (min-width: 40rem) {
+    .total-display__container .total-display {
+        width: 30%;
+    }
+}

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <title>Customers</title>
+        <title>Order Now</title>
         <link href="styles.css" rel = "stylesheet">
         <link href="../shared.css" rel = "stylesheet">
         <link href="../images/logo-brand-small-icon.png" rel="shortcut icon">
@@ -12,9 +12,8 @@
         <header class = "main-header">
             <div>
                 <button class = "toggle-button">
-                    <span class = "toggle-button__bar"></span>
-                    <span class = "toggle-button__bar"></span>
-                    <span class = "toggle-button__bar"></span>
+                    <span class = "toggle-button__bar toggle-button__bar-one"></span>
+                    <span class = "toggle-button__bar toggle-button__bar-two"></span>
                 </button>
                 <a href = "../index.html" class = "main-header__brand">
                     <img src="../images/logo-brand-small-icon.png">
@@ -22,24 +21,67 @@
             </div>
             <nav class = "main-nav">
                 <ul class = "main-nav__items">
+                    <li class = "main-nav__item"><a href = "../index.html">Home</a></li>
                     <li class = "main-nav__item"><a href="../Customers/index.html">Customers</a></li>
-                    <li class = "main-nav__item"><a href="../Contact/index.html">Contact</a></li>
                     <li class = "main-nav__item"><a href="../About Us/index.html">About Us</a></li>
-                    <li class = "main-nav__item main-nav__item--cta"><a href="index.html">Order Now!</a></li>
+                    <!-- <li class = "main-nav__item main-nav__item--cta"><a href="index.html">Order Now!</a></li> -->
                 </ul>
             </nav>
-            
         </header>
         <nav class = "mobile-nav">
             <ul class = "mobile-nav__items">
+                <li class = "mobile-nav__item"><a href = "../index.html">Home</a></li>
                 <li class = "mobile-nav__item"><a href="../Customers/index.html">Customers</a></li>
-                <li class = "mobile-nav__item"><a href="../Contact/index.html">Contact</a></li>
                 <li class = "mobile-nav__item"><a href="../About Us/index.html">About Us</a></li>
-                <li class = "mobile-nav__item mobile-nav__item--cta"><a href="index.html">Order Now!</a></li>
+                <!-- <li class = "mobile-nav__item mobile-nav__item--cta"><a href="index.html">Order Now!</a></li> -->
             </ul>
         </nav>
         <main>
-
+            <h1 class = "order-title">Welcome the green into your home</h1>
+            <div class = "order-container">
+                <div class = "order-tile">
+                    <img src="../images/broccoli.webp">
+                    <h3 class = "order-tile__name">2 oz Broccoli</h3>
+                    <p class = "order-tile__desc">$5.00 / 2 oz</p>
+                    <div class = "order-tile__incrementor-wrapper">
+                        <button class = "button-increment__before-broccoli">-</button>
+                        <input type = "number" id = "order-amount__broccoli" value = "0" min = "0" max = "99">
+                        <button class = "button-increment__after-broccoli">+</button>
+                    </div>
+                </div>
+                <div class = "order-tile" id = "order-tile__arugula">
+                    <img src="../images/arugula.png">
+                    <h3 class = "order-tile__name">2 oz Arugula</h3>
+                    <p class = "order-tile__desc">$5.00 / 2 oz</p>
+                    <div class = "order-tile__incrementor-wrapper">
+                        <button class = "button-increment__before-arugula">-</button>
+                        <input type = "number" id = "order-amount__arugula" value = "0" min = "0" max = "99"> 
+                        <button class = "button-increment__after-arugula">+</button>
+                    </div>
+                </div>
+                <div class = "order-tile">
+                    <img src="../images/radish.webp">
+                    <h3 class = "order-tile__name">2 oz Radish</h3>
+                    <p class = "order-tile__desc">$5.50 / 2 oz</p>
+                    <div class = "order-tile__incrementor-wrapper">
+                        <button class = "button-increment__before-radish">-</button>
+                        <input type = "number" id = "order-amount__radish" value = "0" min = "0" max = "99">
+                        <button class = "button-increment__after-radish">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class = "submit-button__container">
+                <button class = "submit-button">Submit</button>
+            </div>
+            <div class = "total-display__container">
+                <div class = "total-display">
+                    <h3 class = "total-display__title">Totals:</h3>
+                    <div class = "total-broccoli total"></div>
+                    <div class = "total-arugula total"></div>
+                    <div class = "total-radish total"></div>
+                    <div class = "grand-total"></div>
+                </div>
+            </div>
         </main>
         <footer class = "main-footer">
             <ul class = "main-footer__items">
@@ -47,6 +89,8 @@
                 <li class = "main-footer__item footer-name">Jabari Powery</li>
             </ul>
         </footer>
-        <script src = "../script.js"></script>
+        
+        <script src = "../shared.js"></script>
+        <script src = "script.js"></script>
     </body>
 </html>
