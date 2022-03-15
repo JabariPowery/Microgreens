@@ -1,0 +1,65 @@
+main {
+  margin-bottom: 20rem;
+}
+
+.color-tile__container {
+  margin-top: 3.5rem;
+  height: 60rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "a a b" "c d d" "e e e";
+}
+.color-tile__container div {
+  padding: 1rem;
+}
+.color-tile__container .color-tile-a {
+  grid-area: a;
+  background-color: #255135;
+  color: #AC8B38;
+}
+.color-tile__container .color-tile-b {
+  grid-area: b;
+  background-color: #9E6328;
+  color: #142F2A;
+}
+.color-tile__container .color-tile-c {
+  grid-area: c;
+  background-color: #AC8B38;
+  color: #255135;
+}
+.color-tile__container .color-tile-d {
+  grid-area: d;
+  background-color: #142F2A;
+  color: #9E6328;
+  text-align: right;
+}
+.color-tile__container .color-tile-e {
+  grid-area: e;
+  background-color: #0D1D1A;
+  color: white;
+  text-align: center;
+}
+
+#second-cta a {
+  color: white;
+  background-color: #1f423c;
+  background-image: none;
+}
+
+#second-cta a:hover {
+  background-color: white;
+  color: #1f423c;
+}
+
+@media (min-width: 40rem) {
+  body .main-footer {
+    margin-top: 0;
+  }
+
+  main {
+    margin-bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
