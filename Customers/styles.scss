@@ -1,0 +1,43 @@
+main {
+    margin-top: 3.5rem;
+}
+
+
+.customer-tile__container {
+    text-align: center;
+    .customer-tile {
+        margin: 5rem 1rem;
+        .tile-image__container {
+            max-width: 30rem;
+            display: block;
+            img {
+                width: 100%;
+            }
+        }
+        .customer-tile__info {
+            display: block;
+            width: 100%;
+            margin: 0;
+            padding: 0.5rem;
+            font-size: 1.2rem;
+        }
+        .tile-1-info {
+            text-align: left;
+        }
+        .tile-2-info {
+            text-align: right;
+        }
+    }
+}
+
+@media (min-width: 40rem) {
+    .customer-tile__container .customer-tile .customer-tile__info {
+        vertical-align: top;
+        display:inline-block;
+        width: 35%;
+    }
+    .customer-tile__container .customer-tile .tile-image__container {
+        display:inline-block;
+        width: 40%;
+    }
+}
